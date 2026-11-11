@@ -162,3 +162,26 @@ Evidence collected during the evaluation includes:
 - Enquiry form submission and error observations.
 
 These materials provide a baseline for comparison with the redesigned website.
+### 6.1 Lighthouse Screenshot Evidence
+
+The following screenshots provide visual evidence of the accessibility issues identified during testing.
+
+**Screenshot 1: Accessibility Score and Missing Image Alt Text**
+
+![Accessibility score](lighthouse-screenshots/01-accessibility-score-and-missing-image-alt.png)
+
+**Screenshot 2: Missing HTML Language Attribute**
+
+![Missing language attribute](lighthouse-screenshots/02-missing-html-language-and-touch-target.png)
+
+**Screenshot 3: Touch Target Spacing Issues**
+
+![Touch target issues](lighthouse-screenshots/03-touch-target-spacing-issues.png)
+
+**Screenshot 4: Heading Order Issue**
+
+![Heading order issue](lighthouse-screenshots/04-heading-order-issue.png)
+
+**Screenshot 5: Additional Manual Accessibility Checks**
+
+![Manual accessibility checks](lighthouse-screenshots/05-manual-accessibility-checks.png)
