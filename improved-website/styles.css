@@ -1,0 +1,293 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #eeeeee;
+}
+
+header {
+    background: #14365d;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 8px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+nav a:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 4px;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 8px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f1f5f9;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),
+select,
+textarea {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 6px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+button:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+footer {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 12px;
+    text-align: center;
+}
+/* Mobile Responsive Design */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),
+    select,
+    textarea {
+            width: 100%;
+            max-width: 100%;
+    }
+
+    footer {
+        width: 95%;
+        padding: 10px;
+    }
+
+    button {
+        max-width: 100%;
+    }
+    .vehicle-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .vehicle-card img {
+        width: 100%;
+        height: auto;
+    }
+    .vehicle-list {
+        grid-template-columns: 1fr;
+    }
+}
+/* Contact method alignment */
+
+.contact-method {
+    border: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.contact-method legend {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.radio-option {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+.radio-option input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+.required {
+    color: red;
+    font-weight: bold;
+}
+/* Vehicle listing layout */
+.vehicle-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.vehicle-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.vehicle-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+@media screen and (max-width: 768px) {
+    main .vehicle-list {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        width: 100%;
+    }
+
+    .vehicle-card {
+        width: 100%;
+    }
+}
+
+/* Search bar and clear button alignment */
+#vehicle-search,
+#clear-search {
+    box-sizing: border-box;
+    height: 38px;
+    vertical-align: middle;
+}
+
+#vehicle-search {
+    width: 400px;
+    max-width: 65%;
+    margin: 0;
+}
+
+#clear-search {
+    width: auto;
+    padding: 0 12px;
+    margin: 0 0 0 8px;
+    font-size: 13px;
+    line-height: 36px;
+    display: inline-block;
+}
+/* Space below vehicle search controls */
+#vehicle-search,
+#clear-search {
+    margin-bottom: 15px;
+}
+/* Success message styling */
+#success-message {
+    background-color: #eaf7ed;
+    border: 1px solid #a5d6ad;
+    border-radius: 10px;
+    padding: 20px;
+    color: #1b5e20;
+    margin-top: 20px;
+}
+
+#success-message h3 {
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
